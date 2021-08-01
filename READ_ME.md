@@ -1,21 +1,21 @@
 Project features:
 - przełączanie giełd/inne api
 - pobieranie aktualnych wartości ze strony
-- pokazywanie ceny
+- napewno,aby pokazywala cene
 - wykresy
 - transakcje
 - historia
-- wyświetlanie TOP/sortowanie
-- max, min cena w miesiącu
+- wyswietlanie TOP/sortowanie
+- maksymalna i minnimalna cena w miesiacu
 - przeliczanie walut
-- wiadomości ze świata
+- wiadomości ze świata  😀
     - market research
-- wyświetlanie paska z wartościami
+- wyswietlanie paska z wartościami np. WIG 20
 - alerty
-- potfel
+- portfel
 - filtry
 - zleć kupno lub sprzedaż gdy wartość jest wybrana
-- panel administracyjny konta
-- logowanie użytkownika
-- zmiana hasła
+- panel administracji konta
+- może logowanie uzytkownika
+- zmiana hasla
 - opcja premium
