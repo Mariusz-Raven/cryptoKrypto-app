@@ -1,0 +1,21 @@
+Project features:
+- pobieranie aktualnych wartości ze strony
+- pokazywanie ceny
+- potfel
+- logowanie użytkownika
+- transakcje
+- przeliczanie walut
+- wykresy
+- wyświetlanie TOP/sortowanie
+- max, min cena w miesiącu
+- historia
+- alerty
+- zleć kupno lub sprzedaż gdy wartość jest wybrana
+- przełączanie giełd/inne api
+- wiadomości ze świata
+- wyświetlanie paska z wartościami
+- market research
+- zmiana hasła
+- panel administracyjny konta
+- opcja premium
+- 
