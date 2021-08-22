@@ -3,6 +3,8 @@ package com.example.cryptokrypto.controller;
 import com.example.cryptokrypto.dto.WeatherDto;
 import com.example.cryptokrypto.service.WeatherService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,9 +30,13 @@ public class WeatherController {
     }
 
     @GetMapping("/weathers/{id}")
-    public WeatherDto getWeatherById(@PathVariable("id") Long id) {
+    public ResponseEntity<WeatherDto> getWeatherById(@PathVariable("id") Long id) {
         log.info("getWeatherById: [{}]", id);
         var result = wheaterService.findWeatherById(id);
-        return result.orElse(null);
+        if (result.isPresent()) {
+            return new ResponseEntity<>(result.get(), HttpStatus.OK);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }
