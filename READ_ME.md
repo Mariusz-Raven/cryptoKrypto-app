@@ -63,3 +63,28 @@
 - może logowanie uzytkownika
 - zmiana hasla
 - opcja premium
+
+### MVC (Model, View, Controller)
+V - view
+C - controller
+M - modela (data + operation)
+
+View - dto
+
+Controller - returns dto
+
+Service - operations
+
+Repository - data (entities)
+
+### Responsibilities
+
+Controller
+- returns views/data
+- handle queries
+
+Service
+- business logic
+
+Repository
+- data management
