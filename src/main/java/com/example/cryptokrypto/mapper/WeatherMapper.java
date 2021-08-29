@@ -5,8 +5,7 @@ import com.example.cryptokrypto.entity.Weather;
 import org.springframework.stereotype.Component;
 
 @Component
-public class WeatherMapper implements Mapper<Weather, WeatherDto> {
-
+public class WeatherMapper implements Mapper<Weather, WeatherDto>{
     @Override
     public WeatherDto fromEntityToDto(Weather weather) {
         return new WeatherDto(weather.getId(), weather.getCity(), weather.getTemperatureInCelsius());
