@@ -45,7 +45,7 @@ public class WeatherController {
     public ResponseEntity<WeatherDto> createWeatherForecast(@RequestBody WeatherDto newWeather) {
         log.info("trying to create new weather forecast: [{}]", newWeather);
 //        return new ResponseEntity<>(weatherService.createNewWeatherForecast(newWeather), HttpStatus.CREATED);
-        var body = weatherService.createNewWeatherForecast(newWeather);
+        var body = weatherService.createNewWeather(newWeather);
 
 //        MultiValueMap<String, String> headers = new HttpHeaders();
 //        headers.add(HttpHeaders.LOCATION, "/api/weathers/" + body.id());
