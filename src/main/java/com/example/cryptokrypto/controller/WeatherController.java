@@ -43,6 +43,6 @@ public class WeatherController {
     @PostMapping("/weathers")
     public WeatherDto createWeatherForecast(@RequestBody WeatherDto newWeather) {
         log.info("trying to create new weather forecast: [{}]", newWeather);
-        return null;
+        return weatherService.createNewWeather(newWeather);
     }
 }
