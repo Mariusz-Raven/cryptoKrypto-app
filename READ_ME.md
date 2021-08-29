@@ -64,39 +64,36 @@
 - zmiana hasla
 - opcja premium
 
-### MVC (Model, View, Controller)
+#### MVC (Model, View, Controller)
 V - view
 C - controller
-M - modela (data + operation)
+M - model (data + operations)
 
 View - dto
-
 Controller - returns dto
-
 Service - operations
-
 Repository - data (entities)
 
-### Responsibilities
+#### Responsibilities
 
 Controller
 - returns views/data
 - handle queries
 
 Service
-- business logic
+- business logic :)
 
 Repository
 - data management
 
-### Restfull (CRUD on Http)
+#### Restfull (CRUD on Http)
 - resource has URI
 - Read - GET
 - Create - POST
 - Delete - DELETE
 - Update - PUT (replace), PATCH (partial update)
 
-#### Http Response coedes:
+#### Http Response codes
 - 1xx - processing in progress
 - 2xx - ok
 - 3xx - redirect

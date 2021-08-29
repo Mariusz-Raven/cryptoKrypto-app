@@ -15,7 +15,7 @@ public class WeatherMapper implements Mapper<Weather, WeatherDto>{
     public Weather fromDtoToEntity(WeatherDto weatherDto) {
         return Weather.builder()
                 .id(weatherDto.id())
-                .city(weatherDto.myCIty())
+                .city(weatherDto.myCity())
                 .temperatureInCelsius(weatherDto.tempInCelsius())
                 .build();
     }
