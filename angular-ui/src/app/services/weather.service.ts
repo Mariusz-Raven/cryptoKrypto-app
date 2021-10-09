@@ -12,7 +12,7 @@ export class WeatherService {
   constructor(private http: HttpClient) { }
 
   myName(): string {
-    return "maniek"
+    return "Mario"
   }
 
   readWeatherForecasts(): Observable<Array<SpringWeatherResponse>> {
