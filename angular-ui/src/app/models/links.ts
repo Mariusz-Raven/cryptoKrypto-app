@@ -5,4 +5,5 @@ export const githubApi = `${server}/api/github/repos`
 
 export const githubUrl = 'github'
 export const weatherUrl = 'pogoda'
+export const homeUrl = ''
 
