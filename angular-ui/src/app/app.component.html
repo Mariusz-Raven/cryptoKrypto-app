@@ -1,3 +1,17 @@
-<h1>Hello Angular</h1>
-<app-weather></app-weather>
-<app-github></app-github>
+<h1>Welcome to My application</h1>
+<h1>Hire me!!!!</h1>
+<p>
+  <mat-toolbar>
+    <span>Sandbox application</span>
+    <mat-divider [inset]="true"></mat-divider>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">Home</mat-button-toggle>
+      <mat-button-toggle value="italic">Weather</mat-button-toggle>
+      <mat-button-toggle value="underline">GitHub</mat-button-toggle>
+    </mat-button-toggle-group>
+  </mat-toolbar>
+</p>
+<!--<app-weather></app-weather>-->
+<!--<app-github></app-github>-->
+<router-outlet></router-outlet>
+
