@@ -8,8 +8,9 @@ import {GitHubRepo} from "../../models/github.data";
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
-  repos!: GitHubRepo[];
-  // repos: GitHubRepo[] = []; // to samo co wyżej
+  // repos!: GitHubRepo[];
+  repos: GitHubRepo[] = []; // to samo co wyżej
+  displayedColumns = ['fullName', 'login', 'type', 'forksUrl'];
   constructor(private github: GithubService) { }
 
   ngOnInit(): void {
