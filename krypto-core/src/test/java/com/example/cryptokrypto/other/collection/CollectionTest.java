@@ -193,9 +193,9 @@ class CollectionTest {
     @Test
     void multilineStringTest() {
         String multi = """
-                    Ala ma kota
-                  i kot ma Ale
-                """;
+                Ala ma kota
+              i kot ma Ale
+            """;
         String oldMulti = ""
                 + "    Ala ma kota\n"
                 + "  i kot ma Ale\n";
@@ -207,9 +207,9 @@ class CollectionTest {
     void lazyTest() {
         Stream.of("one", "four")
                 .mapToInt(value -> {
-                    System.out.println("mapping....");
+                    System.out.println("mapping.....");
                     return value.length();
                 })
-                .forEach(System.out::println);
+                .forEach((System.out::println));
     }
 }
